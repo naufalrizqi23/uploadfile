@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+	<title>Kicau Mania Purworejo</title>
+ 
+</head>
+<body>
+ 
+	<style type="text/css">
+	html,body{
+		padding: 0;
+		margin:0;
+		font-family: roboto;
+	}
+	
+	.header {
+		Padding: 10px 0px 0px 10px;;
+		font-family : arial;	
+		color: green;
+	}
+	.menu-malasngoding {
+		background: green;
+		position : relative;
+		width: 100%;
+		height: 120px;
+		margin: 0px;
+	}
+		
+	
+ 
+	.menu-malasngoding ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+ 
+	.menu-malasngoding > ul > li {
+		float: left;
+	}
+ 
+	
+	.menu-malasngoding li a {
+		display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		z-index: 5;
+	}
+ 
+	.menu-malasngoding li a:hover{
+		color : green;
+	}
+ 
+	li.dropdown {
+		display: block;
+		z-index: 5;
+	}
+ 
+	.dropdown:hover .isi-dropdown {
+		display: block;
+		z-index: 5;
+	}
+ 
+	.isi-dropdown a:hover {
+		color : rgb (230 ,230, 250);
+	}
+ 
+	.isi-dropdown {
+		position: absolute;
+		display:none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 50;
+		background-color: #e6f2ff;
+	}
+ 
+	.isi-dropdown a {
+		color: #3c3c3c !important;
+		z-index: 5;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #e60000 !important;
+		z-index: 5;
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	.konten{
+		font-family : arial;
+		width : 100%;
+		}
+	
+	.row{
+		float : right;
+		width: 75%;
+		
+		}
+	.row1{
+		float : right;
+		width: 75%;
+		height: 300px;
+		background-color: none;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		}
+	.row2{
+		float : left;
+		width: 100%;
+		padding-top: 50px;
+		
+		}
+
+	.column {
+		float: right;
+		width: 33.33%;
+		padding: 10px;
+		height: 300px;
+		position: relative;
+	}
+	.img-column{
+		width: 100%;
+		height: 100%;
+		}
+		
+	.text-img{
+		position : absolute;
+		top : 70%;
+		left : 10px;
+		color : white;
+		font-style : bold;
+		font-size: 20px;
+		padding: 0px 10px 0px 10px ;
+		}
+	.column2 {
+		width : 100%;
+		height: 200px;
+		padding: 10px;
+		}
+	.img-column2{
+		width : 30%;
+		height : 40%
+		padding-right: 10px;
+		float: left;
+		color : gray;
+		font-style : italic;
+		font-size: 12px;
+		}
+	.isi-column2{
+		padding-left: 20px;
+		overflow: auto;
+		
+		}
+	.judul-column2{
+		font-size: 30px;
+		font-style: bold;
+		padding :30px;
+		}
+	.column3{
+		width : 25%;
+		height : 200px;
+		float: left;
+		padding: 20px 35px 20px 35px;
+		
+		}
+	.isi-column3{
+		padding : 20px;
+		text-align: center;
+		}
+		
+	.isi-column3 a{
+		font-style: bold;
+		color: black;
+		text-decoration: none;
+		}
+	.isi-column3 a:hover{
+		color: gray;
+		text-decoration: underline;
+		}
+	.column4{
+		width: 50%;
+		overflow : auto;
+		float : left;
+		}
+	.img-column4{
+		padding : 10px;
+		float: left;
+		width: 150px;
+		height : 120px;
+		}
+	.column-hr{
+		width: 100%;
+		}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.row1:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.row2:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.sidebar-judul {
+		position: absolute;
+		top: 630px;
+		font-size: 25px;
+		font-style: bold;
+		color: orange;
+		height: 50px;
+		width: 25%;
+	}
+	.sidebar {
+		position: absolute;
+		height: 500px;
+		width: 25%;
+		padding-top: 16px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		background-color : #ffccdd;
+	}
+
+	.sidebar a {
+		 padding: 6px 8px 6px 16px;
+		 text-decoration: none;
+		 font-size: 20px;
+		 color: #818181;
+		 display: block;
+	}
+
+	.sidebar a:hover {
+	  color: #f1f1f1;
+	}
+	
+	.isi-sidebar{
+		padding : 5px;
+		
+		}
+	.sidebar2{
+		position: absolute;
+		top: 700px;
+		left: 0px;
+		overflow-x: scroll;
+		overflow-y: scroll;
+		width: 25%;
+		height: 500px;
+		}
+	.isi-sidebar2{
+		
+		}
+		
+	.img-sidebar{
+		padding-right: 10px;
+		float: left;
+		}
+	
+	.footer {
+		position : absolute;
+		top: 1800px;
+		background-color:#00FF00 ;
+		width: 100%;
+		height: 150px;
+		
+	}
+	.footer:after {
+		content: "";
+		display: table;
+		clear: both;
+		
+	}
+	.isi-footer{
+		background-color: green;
+		width : 33.33%;
+		height: 100%;
+		padding : 40px 100px 40px 100px;
+		float : left;
+		color : white;
+		}
+	hr{
+		display :block;
+		border-bottom-style : inset;
+		border-bottom-width: 2px gray;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-left: 10%;
+		margin-right: 10%;
+		}
+	.tanggal{
+		color: #d6d6c2;
+		font-size: 12px;
+		}
+	.search {	float:right;
+			
+			background:rgba(50, 50, 50, 0.2);
+			border:0px solid #dbdbdb;
+		}	
+	.button {
+			position:relative;
+		
+			
+			border:2px solid #53bd84;
+			background-color:#53bd84;
+			color:#fafafa;
+		}
+</style>
+	<div class="menu-malasngoding">
+	<div class="header">
+		<img src="image/kmp.jpg" height="55px" width="170px">
+	</div>
+		<ul>
+			<li><a href="Tugas-pw-akhir.html">Beranda</a></li>
+			<li><a href="brosur.html">Jadwal Lomba</a></li>
+			<li class="dropdown"><a href="#">Artikel Pilihan</a>
+				<ul class="isi-dropdown">
+					<li><a href="kacer.html">Tips Perawatan Burung Kacer</a></li>
+					<li><a href="#">Pakan Burung</a></li>
+					<li><a href="#">Obat Burung</a></li>
+					<li><a href="#">Cara Beternak Burung</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">Brosur Lomba Terkini</a>
+				<ul class="isi-dropdown">
+					<li><a href="detail.html">Lomba Burung Berkicau Piala Marmer Cup 1, Jakarta, 29 Desember 2019 </a></li>
+					<li><a href="#">Piala Raja </a></li>
+					<li><a href="#">Piala Presiden</a></li>
+					<li><a href="#">Ronggolawe Cup</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+<div class="konten">
+	<div class="sidebar">
+		<div class="isi-sidebar">
+			<img class="img-sidebar" src="image/c.png">
+			<p>Lomba Burung Berkicau Piala Marmer Cup 1, Jakarta, 29 Desember 2019</p>
+			<p class="tanggal">29 desember 2019 </p>
+		</div>
+		<hr>
+	  <div class="isi-sidebar">
+			<img class="img-sidebar" src="image/d.png">
+			<p>Lomba Burung Berkicau Prahara Bumi Kartini Cup I, Pati, 29 Desember 2019</p>
+			<p class="tanggal">29 desember 2019 </p>
+		</div>
+		<hr>
+		<div class="isi-sidebar">
+			<img class="img-sidebar" src="image/a.png">
+			<p>Lomba Burung Berkicau Taman Walet Cup, Tangerang, 25 Desember 2019</p>
+			<p class="tanggal">25 desember 2019 </p>
+		</div>
+		<hr>
+		<div class="isi-sidebar">
+			<img class="img-sidebar" src="image/b.png">
+			<p>Lomba Burung Berkicau Curug Enterprise, Tangerang, 25 Desember 2019</p>
+			<p class="tanggal"> 25 desember 2019 </p>
+		</div>
+		<hr>
+		<div class="isi-sidebar">
+			<img class="img-sidebar" src="image/c.png">
+			<p>Lomba Burung Berkicau Piala Marmer Cup 1, Jakarta, 29 Desember 2019</p>
+			<p class="tanggal">29 desember 2019 </p>
+		</div>
+	</div>
+	<div class="sidebar-judul">
+		<p>Berita Lomba</p>
+	</div>
+	<div class="sidebar2">
+		<div class="isi-sidebar2">
+			<img src="image/berita.png">
+			<p>Om Sien Ronny juara umum SF BnR Award 2019</p>
+		</div>
+	</div>
+		<div class="row">
+			<div class="column">
+				<img class="img-column" src="image/c.png">
+				<div class="text-img">Lomba Burung Berkicau Piala Marmer Cup 1, Jakarta, 29 Desember 2019</div>
+			</div>
+			<div class="column">
+				<img class="img-column" src="image/grand.png">
+					<div class="text-img">Grand Launching Lintas Malam Limus BC Cileungsi, Minggu 15 Desember 2019 </div>
+			</div>
+			<div class="column">
+				<img class="img-column" src="image/juara.png">
+					<div class="text-img"> 7371 Team dan Mahadewa SF juara umum di 3rd Anniversary BnR Koblen</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="judul-column2">Hasil <font color="green">Lomba</font></div>
+			</div>
+		<div class="row">
+			<div class="column4">
+				<img class="img-column4" src="image/juara.png">
+				7371 Team dan Mahadewa SF juara umum di 3rd Anniversary BnR Koblen
+					<p class="tanggal">23 desember 2019 </p>
+			</div>
+			<div class="column4">
+				<img class="img-column4" src="image/piter.png">
+				Pitersen, Simon, Mr. 45, Zeus, dan Arjun terbaik di Anjasmoro LA Cup 2
+					<p class="tanggal">20 desember 2019 </p>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="column4">
+				<img class="img-column4" src="image/mb.png">
+				Lovebird Ferguso raih quattrick di mBois Cup 2019
+					<p class="tanggal">19 desember 2019 </p>
+			</div>
+			<div class="column4">
+				<img class="img-column4" src="image/kho.png">
+				Khofifah Cup I : Diikuti 2.511 peserta, Pemprov Jatim tambahkan 2 unit motor untuk doorprize
+					<p class="tanggal">18 desember 2019 </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column4">
+				<img class="img-column4" src="image/god.png">
+				Raih hattrick Godong bersinar di Piala Walikota Yogjakarta V
+					<p class="tanggal">16 desember 2019 </p>
+			</div>
+			<div class="column4">
+				<img class="img-column4" src="image/mur.png">
+				Murai batu Kabayan double winner di Latpres M1 BnR Fiva Sport Surabaya
+					<p class="tanggal">12 desember 2019 </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="judul-column2">Seputar Info</div>
+		</div>
+		<div class="row">
+			<div class="column2">
+				<div class="img-column2"><img src="image/opior.png" width="100%" height="70%">
+					Mengenal empat spesies burung kacamata yang dilindungi di Indonesia</div>
+					<div class="isi-column2">Semula hanya ada satu spesies burung kacamata / pleci (keluarga Zosteropidae) 
+					yang dimasukkan dalam daftar burung dilindungi di Indonesia, yakni opior jawa atau javan grey-throated white-eye (Heleia javanica). 
+					Penetapannya sebagai burung dilindungi itu berdasarkan PP No 7 / Tahun 1999 tentang Pengawetan Jenis Tumbuhan dan Satwa.
+					Saat itu opior jawa ditulis dengan nama ilmiah Lophozosterops javanica. Sekarang para ornitholog dunia bersepakat dengan nama baru Heleia javanica. 
+					Tapi ketika burung pleci marak dilombakan, opior jawa tidak termasuk jenis yang dilombakan.
+					Beberapa spesies burung pleci yang sering dilombakan antara lain kacamata jawa / javan white-eye (Zosterops flavus), mountain white-eye (Zosterops montanus), 
+					oriental white-eye (Zosterops palpebrosus), dan black-capped white-eye (Zosterops atricapilla).Dari beberapa jenis pleci yang sering dilombakan tersebut, 
+					kacamata jawa kini dimasukkan dalam daftar burung dilindungi berdasarkan peraturan terbaru: Permen LHK No P.92 / Tahun 2018. Ada dua spesies pleci lainnya yang menghuni list merah,
+					yakni kacamata sangihe / sangihe white-eye (Zosterops nehrkorni) dan kacamata wallacea / yellow-ringed white-eye (Heleia wallacei)
+					</div>
+			</div>
+			</div>
+		<div class="row2">
+			<div class="column3">
+				<div class="isi-column3">
+					<a href="#">Tips Perawatan Burung Kacer</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Cara Beternak Burung Kenari di Kandang Kecil</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Rahasia Ciblek Gacor</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Piala Raja Tahun 2020</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Ronggolawe Cup 2020</a>
+				</div>
+
+			</div>
+			<div class="column3">
+				<div class="isi-column3">
+					<a href="#">Tips Perawatan Burung Kacer</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Cara Beternak Burung Kenari di Kandang Kecil</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Rahasia Ciblek Gacor</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Piala Raja Tahun 2020</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Ronggolawe Cup 2020</a>
+				</div>
+</div>
+			<div class="column3">
+				<div class="isi-column3">
+					<a href="#">Tips Perawatan Burung Kacer</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Cara Beternak Burung Kenari di Kandang Kecil</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Rahasia Ciblek Gacor</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Piala Raja Tahun 2020</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Ronggolawe Cup 2020</a>
+				</div>
+</div>
+			<div class="column3">
+				<div class="isi-column3">
+					<a href="#">Tips Perawatan Burung Kacer</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Cara Beternak Burung Kenari di Kandang Kecil</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Rahasia Ciblek Gacor</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Piala Raja Tahun 2020</a>
+				</div>
+				<div class="isi-column3">
+					<a href="#">Ronggolawe Cup 2020</a>
+				</div>
+</div>
+	
+<div class="footer">
+	
+	<div class="isi-footer">
+		<p>Kicau Mania Purworejo</p>
+		<p>Hasil Lomba</p>
+	</div>
+	<div class="isi-footer">
+		<p>Brosur Lomba</p>
+		<p>Jadwal Lomba</p>
+	</div>
+	<div class="isi-footer">
+		<p>Tips Perawatan</p>
+		<p>Berita Lomba</p>
+	</div>
+	
+	<p><img src="image/kmp.jpg" height="55px" width="170px">
+		<li><a href="about-us.html">Tentang Kami</a></li>
+	Contact Us (WA 084576229090) fb:KICAU MANIA PURWOREJO(KMP) Ig:@kicaumaniapwr</p>	
+</div>
+
+</body>
+</html>

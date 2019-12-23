@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+</head>
+<style>
+	html,body{
+		padding: 0;
+		margin:0;
+		font-family: roboto;
+	}
+	.menu-malasngoding {
+		background: green;
+		position : relative;
+		width: 100%;
+		height: 120px;
+		margin: 0px;
+	}
+		
+	
+ 
+	.menu-malasngoding ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+ 
+	.menu-malasngoding > ul > li {
+		float: left;
+	}
+ 
+	
+	.menu-malasngoding li a {
+		display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		z-index: 5;
+	}
+ 
+	.menu-malasngoding li a:hover{
+		color : #e60000
+	}
+	
+	li.dropdown {
+		display: block;
+		z-index: 5;
+	}
+ 
+	.dropdown:hover .isi-dropdown {
+		display: block;
+		z-index: 5;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #e60000 !important;
+	}
+ 
+	.isi-dropdown {
+		position: absolute;
+		display:none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 50;
+		background-color: #e6f2ff;
+	}
+ 
+	.isi-dropdown a {
+		color: #3c3c3c !important;
+		z-index: 5;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #e60000 !important;
+		z-index: 5;
+	}
+	
+	.header {
+		Padding: 10px 0px 0px 10px;;
+		font-family : arial;	
+		color: green;
+	}
+	.login {
+		float: right;
+		color: green;
+		}
+	.login a {
+		font-size: 18px;
+		margin : 10px 40px 10px 10px;
+		color: green;
+		text-decoration: none;
+		}
+	.login a:hover{
+		color: white;
+		font-style: italic;
+		}
+
+	.judul {
+		font-size: 25px;
+		font-family: Arial;
+		font-weight: bold;
+		
+	}
+	.card {
+		box-shadow:0 4px 20px 0 rgba(0, 0, 0, 0.2);
+		max-width: 700px; /*membuat ukuran div class card dengan ukuran lebar max 300px*/
+		margin: left; /* membuat margin rata tengah */
+		text-align: left; /* membuat semua bentuk text dan tombil button rata tengah */
+		font-family :arial;
+	}
+	.row:after{
+			content:"";
+			display: table;
+			clear: both;
+			
+	}
+	.column {
+			text-align:center ;
+			
+	}
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+	
+	* {
+	box-sizing: border-box;
+	}
+	.footer {
+		position : absolute;
+		
+		background-color: green;
+		width: 100%;
+		height: 150px;
+		
+	}
+	.footer:after {
+		content: "";
+		display: table;
+		clear: both;
+
+		
+	}
+	.isi-footer{
+		background-color: green;
+		width : 33.33%;
+		height: 100%;
+		padding : 40px 100px 40px 100px;
+		float : left;
+		color : white;
+		}
+		.tanggal{
+		color: grey;
+		
+		}
+</style>
+<body>
+	<div class="menu-malasngoding">
+	<div class="header">
+		<img src="image/kmp.jpg" height="55px" width="170px">
+	</div>
+		<ul>
+			<li><a href="Tugas-pw-akhir.html">Beranda</a></li>
+			<li><a href="#">Brosur Lomba</a></li>
+			<li class="dropdown"><a href="#">Artikel Pilihan</a>
+				<ul class="isi-dropdown">
+					<li><a href="kacer.html">Tips Perawatan Burung Kacer</a></li>
+					<li><a href="#">Pakan Burung</a></li>
+					<li><a href="#">Obat Burung</a></li>
+					<li><a href="#">Cara Beternak Burung</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">Brosur Lomba Terkini</a>
+				<ul class="isi-dropdown">
+					<li><a href="detail.html">Lomba Burung Berkicau Piala Marmer Cup 1, Jakarta, 29 Desember 2019 </a></li>
+					<li><a href="#">Piala Raja </a></li>
+					<li><a href="#">Piala Presiden</a></li>
+					<li><a href="#">Ronggolawe Cup</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+<div class="card">
+	<p class="judul">Tentang Kami </p>
+	
+	
+<div class="row">
+		<div class="column">
+		    <img src="kicauman.jpeg" height="400px" width="500px" align="center">
+		</div>
+</div>
+
+
+<p>Kicau Mania Purworejo merupakan website sebgai sumber referensi dan informasi bagi para Penghobi Burung Kicau di wilayah Purworejo </p>
+<p>Karena seiring dengan perkembangan teknologi yang semakin pesat maka di buatlah sebuah web hobi, referensi, dan informasi ini.</p>
+<p>Yang memudahkan para penghobi untuk mencari informasi mengenai berita lomba, tips perawatan burung, hasil lomba, dan brosur lomba.</p>
+
+<p>
+</p>
+
+
+<div class="footer">
+	
+	<div class="isi-footer">
+		<p>Kicau Mania Purworejo</p>
+		<p>Hasil Lomba</p>
+	</div>
+	<div class="isi-footer">
+		<p>Brosur Lomba</p>
+		<p>Jadwal Lomba</p>
+	</div>
+	<div class="isi-footer">
+		<p>Tips Perawatan</p>
+		<p>Berita Lomba</p>
+	</div>
+	
+	<p><img src="image/kmp.jpg" height="55px" width="170px">	
+	Contact Us (WA 084576229090) fb:KICAU MANIA PURWOREJO(KMP) Ig:@kicaumaniapwr</p>	
+</div>
+	
+</div>
+
+
+</body>
+</html>
